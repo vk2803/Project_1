@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin :0;
+    padding :0;
+    box-sizing :border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar{
+    position: sticky;
+    top :0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    background: black;
+}
+.navbar .navbar-brand{
+    font-size: 30px;
+    font-weight: 800;
+    color :#29f700 !important; 
+}
+#navbarSupportedContent a{
+    color : #fff; 
+    border-bottom: 2px solid transparent; 
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid #29f700;
+
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*******home*******/
+
+#home{
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)),url(motherboard.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+#home h1{
+    font-size: 100px;
+    color: white;
+    letter-spacing: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 1px 0px #ccc,
+                 0px 2px 0px #ccc,
+                 0px 3px 0px #ccc,
+                 0px 4px 0px #ccc,;
+}
+#home p{
+    font-size: 20px;
+    color: #fff;
+    text-justify: auto;
+}
+/******about*****/
+#about{
+    background: linear-gradient(to right, #d4d0d4,#d4d0d4 100%) 
+}
+#about h1{
+    font-weight: 500;
+    font-size: 30px;
+
+
+}
+/***product*****/
+/**product1 flp*****/
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .card {
+    width: 300px;
+    height: 300px;
+    background: #e5e5e5 !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3), inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+    transition: .2s;
+}
+
+    .card:hover {
+        box-shadow: inset 5px 5px 10px rgba(0,0,0,.3), inset -4px -4px 10px white;
+        transition: .2s;
+    }
+    /**GALLERY****/
+    * {
+        box-sizing: border-box;
+      }
+      
+      /* Position the image container (needed to position the left and right arrows) */
+      .container {
+        position: relative;
+      }
+      
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+      
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+        cursor: pointer;
+      }
+      
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 50px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .prev {
+        left: 0;        
+        border-radius: 3px 0 0 3px;
+      }
+     
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* Container for image text */
+      .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+      }
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Six columns side by side */
+      .column {
+        float: left;
+        width: 16.66%;
+      }
+      
+      /* Add a transparency effect for thumnbail images */
+      .demo {
+        opacity: 0.6;
+      }
+      
+      .active,
+      .demo:hover {
+        opacity: 1;
+      }
+
+    #contact img:hover {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+    .box{
+        width: 100% !important;
+        margin-top: 10px;
+    }
+    table, td, th {
+        border: 1px solid;
+    }
+    table{
+        border-collapse: collapse;
+        Width:100%;
+    
+    }
+    td {
+        background-color: indianred;
+        
+    }
+    
+
+    
